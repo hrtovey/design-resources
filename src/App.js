@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Resource from "./Resource";
+import resources from "./resources";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    resources: {}
+  };
+
+  loadResources = () => {
+    this.setState({
+      resources: resources
+    });
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <div className="logo">Design Resources</div>
+        </header>
+        <div className="resources">
+          <ul className="resources__list">
+            {Object.keys(this.state.resources).map(key => (
+              <Resource
+                key={key}
+                index={key}
+                details={this.state.resources[key]}
+              />
+            ))}
+          </ul>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
