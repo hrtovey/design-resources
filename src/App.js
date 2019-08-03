@@ -1,18 +1,18 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Resource from "./Resource";
 import resources from "./resources";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      resources: resources
+    };
+  }
+
   state = {
     resources: {}
-  };
-
-  loadResources = () => {
-    this.setState({
-      resources: resources
-    });
   };
 
   render() {
