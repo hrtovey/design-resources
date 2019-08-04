@@ -23,11 +23,11 @@ class App extends React.Component {
         </header>
         <div className="resources">
           <ul className="resources__list">
-            {Object.keys(this.state.resources).map(key => (
+            {Object.keys(this.state.resources.css).map(key => (
               <Resource
                 key={key}
                 index={key}
-                details={this.state.resources[key]}
+                details={this.state.resources.css[key]}
               />
             ))}
           </ul>
