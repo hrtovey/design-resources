@@ -1,6 +1,6 @@
 import React from "react";
+import Router from "./Router.js";
 import "./App.css";
-import Resource from "./Resource";
 import resources from "./resources";
 
 class App extends React.Component {
@@ -18,20 +18,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <div className="logo">Design Resources</div>
-        </header>
-        <div className="resources">
-          <ul className="resources__list">
-            {Object.keys(this.state.resources.css).map(key => (
-              <Resource
-                key={key}
-                index={key}
-                details={this.state.resources.css[key]}
-              />
-            ))}
-          </ul>
-        </div>
+        <h1>Awesome</h1>
+
+        <Router />
       </div>
     );
   }

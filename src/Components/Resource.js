@@ -12,8 +12,7 @@ class Resource extends React.Component {
   };
 
   render() {
-    const { title, image, desc, link } = this.props.details;
-    return <li className="menu-fish">{title}</li>;
+    return <li className="menu-fish">Testing</li>;
   }
 }
 
