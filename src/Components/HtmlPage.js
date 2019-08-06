@@ -1,15 +1,15 @@
 import React from "react";
 import Resource from "./Resource";
 
-const Css = () => {
+const HtmlPage = (props) => {
   return (
     <div className="resources">
       <ul className="resources__list">
-        {Object.keys(this.state.resources.css).map(key => (
+        {Object.keys(props.state.resources.html).map(key => (
           <Resource
             key={key}
             index={key}
-            details={this.state.resources.css[key]}
+            details={props.state.resources.html[key]}
           />
         ))}
       </ul>
@@ -17,4 +17,4 @@ const Css = () => {
   );
 };
 
-export default Css;
+export default HtmlPage;

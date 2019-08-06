@@ -12,7 +12,11 @@ class Resource extends React.Component {
   };
 
   render() {
-    return <li className="menu-fish">Testing</li>;
+    return <li className="resource">
+      <p className="resource_title">{this.props.details.title}</p>
+      <p className="resource_description">{this.props.details.desc}</p>
+      <a href={this.props.details.link} className="resource__link">-></a>
+    </li>;
   }
 }
 

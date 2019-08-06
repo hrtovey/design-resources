@@ -5,6 +5,12 @@ const resources = {
       image: "/images/hali.jpg",
       desc: "A fun game that helps you to learn Flexbox.",
       link: "https://flexboxfroggy.com/"
+    },
+    resource2: {
+      title: "Flexbox Froggy 2",
+      image: "/images/hali.jpg",
+      desc: "A fun game that helps you to learn Flexbox.",
+      link: "https://flexboxfroggy.com/"
     }
   },
   html: {

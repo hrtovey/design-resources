@@ -1,7 +1,7 @@
 import React from "react";
 
-const Css = () => {
+const HomePage = () => {
   return <div className="resources">HomePage</div>;
 };
 
-export default Css;
+export default HomePage;

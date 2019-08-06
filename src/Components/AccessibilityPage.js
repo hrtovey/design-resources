@@ -1,15 +1,15 @@
 import React from "react";
 import Resource from "./Resource";
 
-const Css = () => {
+const AccessibilityPage = (props) => {
   return (
     <div className="resources">
       <ul className="resources__list">
-        {Object.keys(this.state.resources.css).map(key => (
+        {Object.keys(props.state.resources.accessibility).map(key => (
           <Resource
             key={key}
             index={key}
-            details={this.state.resources.css[key]}
+            details={props.state.resources.accessibility[key]}
           />
         ))}
       </ul>
@@ -17,4 +17,4 @@ const Css = () => {
   );
 };
 
-export default Css;
+export default AccessibilityPage;
