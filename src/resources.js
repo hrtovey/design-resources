@@ -11,6 +11,96 @@ const resources = {
       image: "/images/hali.jpg",
       desc: "A fun game that helps you to learn Flexbox.",
       link: "https://flexboxfroggy.com/"
+    },
+    resource3: {
+      title: "Flexbox Froggy 2",
+      image: "/images/hali.jpg",
+      desc: "A fun game that helps you to learn Flexbox.",
+      link: "https://flexboxfroggy.com/"
+    },
+    resource4: {
+      title: "Flexbox Froggy 2",
+      image: "/images/hali.jpg",
+      desc: "A fun game that helps you to learn Flexbox.",
+      link: "https://flexboxfroggy.com/"
+    },
+    resource5: {
+      title: "Flexbox Froggy 2",
+      image: "/images/hali.jpg",
+      desc: "A fun game that helps you to learn Flexbox.",
+      link: "https://flexboxfroggy.com/"
+    },
+    resource6: {
+      title: "Flexbox Froggy 2",
+      image: "/images/hali.jpg",
+      desc: "A fun game that helps you to learn Flexbox.",
+      link: "https://flexboxfroggy.com/"
+    },
+    resource7: {
+      title: "Flexbox Froggy 2",
+      image: "/images/hali.jpg",
+      desc: "A fun game that helps you to learn Flexbox.",
+      link: "https://flexboxfroggy.com/"
+    },
+    resource8: {
+      title: "Flexbox Froggy 2",
+      image: "/images/hali.jpg",
+      desc: "A fun game that helps you to learn Flexbox.",
+      link: "https://flexboxfroggy.com/"
+    },
+    resource9: {
+      title: "Flexbox Froggy 2",
+      image: "/images/hali.jpg",
+      desc: "A fun game that helps you to learn Flexbox.",
+      link: "https://flexboxfroggy.com/"
+    },
+    resource10: {
+      title: "Flexbox Froggy 2",
+      image: "/images/hali.jpg",
+      desc: "A fun game that helps you to learn Flexbox.",
+      link: "https://flexboxfroggy.com/"
+    },
+    resource11: {
+      title: "Flexbox Froggy 2",
+      image: "/images/hali.jpg",
+      desc: "A fun game that helps you to learn Flexbox.",
+      link: "https://flexboxfroggy.com/"
+    },
+    resource12: {
+      title: "Flexbox Froggy 2",
+      image: "/images/hali.jpg",
+      desc: "A fun game that helps you to learn Flexbox.",
+      link: "https://flexboxfroggy.com/"
+    },
+    resource13: {
+      title: "Flexbox Froggy 2",
+      image: "/images/hali.jpg",
+      desc: "A fun game that helps you to learn Flexbox.",
+      link: "https://flexboxfroggy.com/"
+    },
+    resource14: {
+      title: "Flexbox Froggy 2",
+      image: "/images/hali.jpg",
+      desc: "A fun game that helps you to learn Flexbox.",
+      link: "https://flexboxfroggy.com/"
+    },
+    resource15: {
+      title: "Flexbox Froggy 2",
+      image: "/images/hali.jpg",
+      desc: "A fun game that helps you to learn Flexbox.",
+      link: "https://flexboxfroggy.com/"
+    },
+    resource16: {
+      title: "Flexbox Froggy 2",
+      image: "/images/hali.jpg",
+      desc: "A fun game that helps you to learn Flexbox.",
+      link: "https://flexboxfroggy.com/"
+    },
+    resource17: {
+      title: "Flexbox Froggy 2",
+      image: "/images/hali.jpg",
+      desc: "A fun game that helps you to learn Flexbox.",
+      link: "https://flexboxfroggy.com/"
     }
   },
   html: {
