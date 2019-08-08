@@ -11,12 +11,30 @@ class Resource extends React.Component {
     })
   };
 
+  copyLink = () => {
+    console.log("link copied", this.props.details.link);
+  };
+
+  favoriteLink = () => {
+    console.log("link favorited", this.props.details.title);
+  };
+
   render() {
-    return <li className="resource">
-      <p className="resource_title">{this.props.details.title}</p>
-      <p className="resource_description">{this.props.details.desc}</p>
-      <a href={this.props.details.link} className="resource__link">-></a>
-    </li>;
+    return (
+      <li className="resource">
+        <div className="resource__info">
+          <p className="resource__title">{this.props.details.title}</p>
+          <p className="resource__description">{this.props.details.desc}</p>
+        </div>
+        <div className="resource__footer">
+          <button className="favorite" onClick={this.favoriteLink} />
+          <button className="copy-link" onClick={this.copyLink} />
+          <a href={this.props.details.link} className="resource__link">
+            ->
+          </a>
+        </div>
+      </li>
+    );
   }
 }
 
