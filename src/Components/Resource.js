@@ -23,15 +23,18 @@ class Resource extends React.Component {
     return (
       <li className="resource">
         <div className="resource__info">
-          <p className="resource__title">{this.props.details.title}</p>
-          <p className="resource__description">{this.props.details.desc}</p>
-        </div>
-        <div className="resource__footer">
-          <button className="favorite" onClick={this.favoriteLink} />
-          <button className="copy-link" onClick={this.copyLink} />
-          <a href={this.props.details.link} className="resource__link">
-            ->
-          </a>
+          <img className="resource__image" src={require('../images/' + this.props.details.image)} alt=""/>
+          <div className="resource__buttons">
+            <button className="favorite" onClick={this.favoriteLink} />
+            <button className="copy-link" onClick={this.copyLink} />
+            <a href={this.props.details.link} className="resource__link">
+              ->
+            </a>
+          </div>
+          <div className="resource__text">
+            <p className="resource__title">{this.props.details.title}</p>
+            <p className="resource__description">{this.props.details.desc}</p>
+          </div>
         </div>
       </li>
     );

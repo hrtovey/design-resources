@@ -7,7 +7,6 @@ import React from "react";
 import { Link, BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import resources from "./resources";
-import HomePage from "./Components/HomePage";
 import SubmitPage from "./Components/SubmitPage";
 import ThankYouPage from "./Components/ThankYouPage";
 import AboutPage from "./Components/AboutPage";
@@ -31,7 +30,7 @@ class App extends React.Component {
       <div className="App">
         <BrowserRouter>
           <header>
-            <h1>Awesome</h1>
+            <p className="logo">Awesome</p>
             <nav className="primary-nav">
               <Link to="/">Home</Link>
               <Link to="/favorites">Favorites</Link>
@@ -51,7 +50,10 @@ class App extends React.Component {
             </nav>
           </header>
           <main>
-            <Route exact path="/" component={HomePage} />
+            <Route exact path="/" 
+              render={props => (
+                <ResourcesPage {...props} state={{resources: this.state.resources}} />
+              )} />
             <Route
               path="/favorites"
               render={props => (
