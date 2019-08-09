@@ -116,6 +116,24 @@ const resources = {
         image: "sample.jpg",
         desc: "A guide dedicated to helping beginners learn HTML and CSS.",
         link: "https://learn.shayhowe.com/html-css/"
+      },
+      resource2: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
+      },
+      resource3: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
+      },
+      resource4: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
       }
     }
   },
@@ -129,19 +147,24 @@ const resources = {
         desc:
           "A free, online bootcamp to get you up and running as a web developer.",
         link: "https://www.freecodecamp.org/"
-      }
-    }
-  },
-  general: {
-    title: "General",
-    desc: "Learn about General.",
-    resourcesList: {
-      resource1: {
-        title: "Free Code Camp",
+      },
+      resource2: {
+        title: "Flexbox Froggy 2",
         image: "sample.jpg",
-        desc:
-          "A free, online bootcamp to get you up and running as a web developer.",
-        link: "https://www.freecodecamp.org/"
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
+      },
+      resource3: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
+      },
+      resource4: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
       }
     }
   },
@@ -155,6 +178,24 @@ const resources = {
         desc:
           "A free, online bootcamp to get you up and running as a web developer.",
         link: "https://www.freecodecamp.org/"
+      },
+      resource2: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
+      },
+      resource3: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
+      },
+      resource4: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
       }
     }
   },
@@ -168,6 +209,24 @@ const resources = {
         desc:
           "A free, online bootcamp to get you up and running as a web developer.",
         link: "https://www.freecodecamp.org/"
+      },
+      resource2: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
+      },
+      resource3: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
+      },
+      resource4: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
       }
     }
   },
@@ -181,6 +240,24 @@ const resources = {
         desc:
           "A free, online bootcamp to get you up and running as a web developer.",
         link: "https://www.freecodecamp.org/"
+      },
+      resource2: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
+      },
+      resource3: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
+      },
+      resource4: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
       }
     }
   },
@@ -194,6 +271,24 @@ const resources = {
         desc:
           "A free, online bootcamp to get you up and running as a web developer.",
         link: "https://www.freecodecamp.org/"
+      },
+      resource2: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
+      },
+      resource3: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
+      },
+      resource4: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
       }
     }
   },
@@ -207,6 +302,24 @@ const resources = {
         desc:
           "A free, online bootcamp to get you up and running as a web developer.",
         link: "https://www.freecodecamp.org/"
+      },
+      resource2: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
+      },
+      resource3: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
+      },
+      resource4: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
       }
     }
   }
