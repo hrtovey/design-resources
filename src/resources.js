@@ -322,6 +322,37 @@ const resources = {
         link: "https://flexboxfroggy.com/"
       }
     }
+  },
+  business: {
+    title: "Business Resources",
+    desc: "Keep your business running efficiently.",
+    resourcesList: {
+      resource1: {
+        title: "Free Code Camp",
+        image: "sample.jpg",
+        desc:
+          "A free, online bootcamp to get you up and running as a web developer.",
+        link: "https://www.freecodecamp.org/"
+      },
+      resource2: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
+      },
+      resource3: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
+      },
+      resource4: {
+        title: "Flexbox Froggy 2",
+        image: "sample.jpg",
+        desc: "A fun game that helps you to learn Flexbox.",
+        link: "https://flexboxfroggy.com/"
+      }
+    }
   }
 };
 

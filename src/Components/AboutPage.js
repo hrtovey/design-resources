@@ -2,8 +2,8 @@ import React from "react";
 
 const AboutPage = () => {
   return (
-    <div className="resources">
-      <h1 className="resources__title">About Page</h1>
+    <div className="page">
+      <h1 className="page__title">About Page</h1>
       <p>
         Resources for Designers is a curated list of excellent resources to help
         you out as a designer. Here, you'll find a variety of resources for:

@@ -58,8 +58,8 @@ class SubmitPage extends React.Component {
       return <Redirect to="/thank-you" />;
     }
     return (
-      <div className="resources">
-        <h1 className="resources__title">Submit a Resource</h1>
+      <div className="page">
+        <h1 className="page__title">Submit a Resource</h1>
 
         <div className="submission-form">
           <p>
@@ -67,7 +67,7 @@ class SubmitPage extends React.Component {
             designers? Please fill out this short form to submit your resource.
           </p>
           <p className="notice">
-            Only the highest-quality resources will be added to this list
+            Only the highest-quality resources will be added to this list.
           </p>
           <form
             className="submission-form"
