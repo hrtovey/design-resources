@@ -1,7 +1,6 @@
 // To Do
-// Add heart, copy NavLink, go to page
-// Add Favorites page (localStorage)
 // Newsletter subscription (let you know about new resources)
+// Add real resources
 
 import React from "react";
 import { NavLink, Link, BrowserRouter, Route } from "react-router-dom";
@@ -23,7 +22,8 @@ class App extends React.Component {
         desc: "See your favorites here.",
         resourcesList: {}
       },
-      favorited: []
+      favorited: [],
+      isActive: false
     };
   }
 
@@ -60,15 +60,28 @@ class App extends React.Component {
     localStorage.setItem("favorited", JSON.stringify(favorited));
   };
 
+  closeMenu = () => {
+    this.setState({ isActive: false });
+  };
+
+  openMenu = () => {
+    this.setState({ isActive: true });
+  };
+
   render() {
     return (
       <div className="App">
         <BrowserRouter>
-          <header>
+          <header className={this.state.isActive ? "active" : ""}>
+            <button className="close menu-button" onClick={this.closeMenu}>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+              </svg>
+            </button>
             <div className="categories">
               <p className="categories__title">Categories</p>
               <nav className="primary-nav">
-                <NavLink exact to="/">
+                <NavLink exact to="/" onClick={this.closeMenu}>
                   <svg
                     className="nav-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +91,7 @@ class App extends React.Component {
                   </svg>{" "}
                   Home
                 </NavLink>
-                <NavLink to="/favorites">
+                <NavLink to="/favorites" onClick={this.closeMenu}>
                   <svg
                     className="nav-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +101,7 @@ class App extends React.Component {
                   </svg>{" "}
                   Favorites
                 </NavLink>
-                <NavLink to="/html">
+                <NavLink to="/html" onClick={this.closeMenu}>
                   <svg
                     className="nav-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +111,7 @@ class App extends React.Component {
                   </svg>{" "}
                   HTML
                 </NavLink>
-                <NavLink to="/css">
+                <NavLink to="/css" onClick={this.closeMenu}>
                   <svg
                     className="nav-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +121,7 @@ class App extends React.Component {
                   </svg>{" "}
                   CSS
                 </NavLink>
-                <NavLink to="/javascript">
+                <NavLink to="/javascript" onClick={this.closeMenu}>
                   <svg
                     className="nav-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +131,7 @@ class App extends React.Component {
                   </svg>{" "}
                   JavaScript
                 </NavLink>
-                <NavLink to="/design">
+                <NavLink to="/design" onClick={this.closeMenu}>
                   <svg
                     className="nav-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +141,7 @@ class App extends React.Component {
                   </svg>{" "}
                   Design
                 </NavLink>
-                <NavLink to="/accessibility">
+                <NavLink to="/accessibility" onClick={this.closeMenu}>
                   <svg
                     className="nav-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +151,7 @@ class App extends React.Component {
                   </svg>{" "}
                   Accessibility
                 </NavLink>
-                <NavLink to="/squarespace">
+                <NavLink to="/squarespace" onClick={this.closeMenu}>
                   <svg
                     className="nav-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +161,7 @@ class App extends React.Component {
                   </svg>{" "}
                   Squarespace
                 </NavLink>
-                <NavLink to="/wordpress">
+                <NavLink to="/wordpress" onClick={this.closeMenu}>
                   <svg
                     className="nav-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +171,7 @@ class App extends React.Component {
                   </svg>{" "}
                   WordPress
                 </NavLink>
-                <NavLink to="/shopify">
+                <NavLink to="/shopify" onClick={this.closeMenu}>
                   <svg
                     className="nav-icon"
                     version="1.1"
@@ -196,7 +209,7 @@ class App extends React.Component {
                   </svg>{" "}
                   Shopify
                 </NavLink>
-                <NavLink to="/business">
+                <NavLink to="/business" onClick={this.closeMenu}>
                   <svg
                     className="nav-icon"
                     version="1.1"
@@ -237,12 +250,20 @@ class App extends React.Component {
               </nav>
             </div>
             <div className="footer">
-              <Link className="sign-up" to="/weekly-digest">
+              <Link
+                className="sign-up"
+                to="/weekly-digest"
+                onClick={this.closeMenu}
+              >
                 Weekly Digest
               </Link>
               <nav className="secondary-nav">
-                <Link to="/about">About</Link>
-                <Link to="/submissions">Submit</Link>
+                <Link to="/about" onClick={this.closeMenu}>
+                  About
+                </Link>
+                <Link to="/submissions" onClick={this.closeMenu}>
+                  Submit
+                </Link>
               </nav>
               <p className="copyright">
                 Made by <a href="https://heathertovey.com">Heather Tovey</a>
@@ -250,6 +271,11 @@ class App extends React.Component {
             </div>
           </header>
           <main>
+            <button className="open menu-button" onClick={this.openMenu}>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+              </svg>
+            </button>
             <Route
               exact
               path="/"

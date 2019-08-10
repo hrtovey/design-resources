@@ -61,7 +61,7 @@ class SubmitPage extends React.Component {
     return (
       <div className="page submit-page">
         <div className="page-half">
-          <img src={svg} alt=""/>
+          <img src={svg} alt="" />
         </div>
         <div className="page-half">
           <h1 className="page__title">Submit a Resource</h1>
@@ -69,7 +69,8 @@ class SubmitPage extends React.Component {
           <div className="submission-form">
             <p>
               Have you created or do you know about a really great resource for
-              designers? Please fill out this short form to submit your resource.
+              designers? Please fill out this short form to submit your
+              resource.
             </p>
             <p className="notice">
               Only the highest-quality resources will be added to this list.
@@ -81,7 +82,8 @@ class SubmitPage extends React.Component {
               onSubmit={this.handleSubmit}
             >
               <label htmlFor="submissionURL">
-                Please provide the URL to the resource you're submitting:
+                Please provide the URL to the resource you're submitting:{" "}
+                <span className="required">*</span>
               </label>
               <input
                 className="submission-form__input"
@@ -92,7 +94,8 @@ class SubmitPage extends React.Component {
                 required
               />
               <label htmlFor="submissionDesc">
-                Why is this resource useful for designers?
+                Why is this resource useful for designers?{" "}
+                <span className="required">*</span>
               </label>
               <textarea
                 className="submission-form__input"
