@@ -19,7 +19,7 @@ header {
   position: fixed;
   top: 0;
   bottom: 0;
-  grid-template-rows: 1fr 250px;
+  grid-template-rows: 1fr 145px;
   overflow-y: auto;
   overflow-x: hidden;
   width: 100%;
@@ -87,7 +87,7 @@ header:after {
 
 @media screen and (min-width: 867px) {
   .categories {
-    padding: 40px 50px;
+    padding: 40px;
   }
 }
 
@@ -169,7 +169,6 @@ a:hover,
 }
 
 .secondary-nav {
-  border-top: 1px solid #ccc;
   text-align: center;
 }
 
@@ -177,11 +176,11 @@ a:hover,
   padding: 10px 20px;
   text-decoration: none;
   display: inline-block;
-  margin: 45px 0;
   border: 2px solid #ffc73f;
   border-radius: 20px;
   color: black;
   transition: background-color 0.5s ease;
+  margin-bottom: 10px;
 }
 
 .sign-up:hover {
