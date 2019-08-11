@@ -1,7 +1,5 @@
 // To Do
-// - remove category from resource ids in case they're moved around in the future
-// - scroll to top on page change
-// - reduce size on background image
+// use media queries so grid is mostly 320
 // - make a favicon
 // - add more resources
 // - create Mailchimp workflow
@@ -18,6 +16,7 @@ import AboutPage from "./Components/AboutPage";
 import ResourcesPage from "./Components/ResourcesPage";
 import HomePage from "./Components/HomePage";
 import NewsletterPage from "./Components/NewsletterPage";
+import ScrollToTop from "./Components/ScrollToTop";
 
 class App extends React.Component {
   constructor(props) {
@@ -79,6 +78,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <BrowserRouter>
+        <ScrollToTop>
           <header className={this.state.isActive ? "active" : ""}>
             <button className="close menu-button" onClick={this.closeMenu}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
@@ -358,6 +358,7 @@ class App extends React.Component {
             <Route path="/about" component={AboutPage} />
             <Route path="/weekly-digest" component={NewsletterPage} />
           </main>
+          </ScrollToTop>
         </BrowserRouter>
       </div>
     );
