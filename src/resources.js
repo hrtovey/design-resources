@@ -1,201 +1,56 @@
+// typography
+// photos/videos/icons, etc.
+// design tools
+
 const resources = {
-  css: {
-    title: "CSS",
-    desc: "Learn about CSS.",
+  learntocode: {
+    title: "Learn to Code",
+    desc:
+      "Learn the HTML, CSS, and JavaScript skills to become an even better web designer.",
     resourcesList: {
-      resource1: {
+      flexboxFroggy: {
         title: "Flexbox Froggy",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
+        image: "flexbox-froggy.png",
+        desc: "A fun game that helps you to learn CSS Flexbox.",
         link: "https://flexboxfroggy.com/"
       },
-      resource2: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
+      cssGarden: {
+        title: "Grid Garden",
+        image: "css-grid-garden.png",
+        desc: "A game to help you learn CSS Grid.",
+        link: "https://cssgridgarden.com/"
       },
-      resource3: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource4: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource5: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource6: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource7: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource8: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource9: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource10: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource11: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource12: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource13: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource14: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource15: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource16: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource17: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      }
-    }
-  },
-  html: {
-    title: "HTML",
-    desc: "Learn about HTML.",
-    resourcesList: {
-      resource1: {
-        title: "Learn to Code HTML & CSS",
-        image: "sample.jpg",
-        desc: "A guide dedicated to helping beginners learn HTML and CSS.",
-        link: "https://learn.shayhowe.com/html-css/"
-      },
-      resource2: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource3: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource4: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      }
-    }
-  },
-  javascript: {
-    title: "JavaScript",
-    desc: "Learn about JavaScript.",
-    resourcesList: {
-      resource1: {
-        title: "Free Code Camp",
-        image: "sample.jpg",
+      freeCodeCamp: {
+        title: "freeCodeCamp",
+        image: "freecodecamp.png",
         desc:
-          "A free, online bootcamp to get you up and running as a web developer.",
+          "Learn to code for free by building projects with HTML, CSS, and JS.",
         link: "https://www.freecodecamp.org/"
-      },
-      resource2: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource3: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource4: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
       }
     }
   },
   design: {
-    title: "Design",
-    desc: "Learn about Design.",
+    title: "Inspiration",
+    desc: "Find inspiration for your newest web design project.",
     resourcesList: {
-      resource1: {
-        title: "Free Code Camp",
-        image: "sample.jpg",
+      dribbble: {
+        title: "Dribbble",
+        image: "dribbble.png",
+        desc: "Find inspiration from other designers and share your own work.",
+        link: "https://dribbble.com/"
+      },
+      behance: {
+        title: "Behance",
+        image: "behance.png",
+        desc: "Discover the latest work from top online portfolios.",
+        link: "https://www.behance.net/"
+      },
+      httpster: {
+        title: "Httpster",
+        image: "httpster.png",
         desc:
-          "A free, online bootcamp to get you up and running as a web developer.",
-        link: "https://www.freecodecamp.org/"
-      },
-      resource2: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource3: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource4: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
+          "An inspiration resource showcasing unpretentious website design.",
+        link: "https://httpster.net"
       }
     }
   },
@@ -203,30 +58,11 @@ const resources = {
     title: "Accessibility",
     desc: "Learn about Accessibility.",
     resourcesList: {
-      resource1: {
-        title: "Free Code Camp",
-        image: "sample.jpg",
-        desc:
-          "A free, online bootcamp to get you up and running as a web developer.",
-        link: "https://www.freecodecamp.org/"
-      },
-      resource2: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource3: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource4: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
+      contrastRatio: {
+        title: "Contrast Ratio",
+        image: "contrast-ratio.png",
+        desc: "Check the contrast ratio of the colors on your website.",
+        link: "https://contrast-ratio.com/"
       }
     }
   },
@@ -234,30 +70,40 @@ const resources = {
     title: "Squarespace",
     desc: "Learn about Squarespace.",
     resourcesList: {
-      resource1: {
-        title: "Free Code Camp",
-        image: "sample.jpg",
+      ghostPlugins: {
+        title: "Ghost Plugins",
+        image: "ghostplugins.png",
         desc:
-          "A free, online bootcamp to get you up and running as a web developer.",
-        link: "https://www.freecodecamp.org/"
+          "An ever growing library of plugins and template for Squarespace.",
+        link: "https://www.ghostplugins.com/"
       },
-      resource2: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
+      fontOptimizer: {
+        title: "Squarespace Font Optimizer",
+        image: "squarespace-font-optimizer.png",
+        desc:
+          "Give your website a performance boost by getting rid of unnecessary fonts.",
+        link: "https://cheers-studios.com/squarespace-font-optimizer"
       },
-      resource3: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
+      blockIdentifier: {
+        title: "Squarespace Collection/Block Identifier",
+        image: "squarespace-identifier.png",
+        desc: "A Chrome extension that helps you to find collection/block IDs.",
+        link:
+          "https://chrome.google.com/webstore/detail/squarespace-collectionblo/bggpdfnccodbnmcndckmeehdjkjojkde"
       },
-      resource4: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
+      toolsExtension: {
+        title: "Squarespace Websites Tools Extension",
+        image: "squarespace-tools-extension.png",
+        desc:
+          "A plugin that adds features and speeds up your workflow on Squarespace 7 sites.",
+        link:
+          "https://www.squarewebsites.org/squarespacewebsites-tools-extension"
+      },
+      sixty: {
+        title: "Sixty",
+        image: "usesixty.png",
+        desc: "Get real-time help via screenshare with any Squarespace task.",
+        link: "https://www.usesixty.com/"
       }
     }
   },
@@ -265,92 +111,152 @@ const resources = {
     title: "WordPress",
     desc: "Learn about WordPress.",
     resourcesList: {
-      resource1: {
-        title: "Free Code Camp",
-        image: "sample.jpg",
+      elementor: {
+        title: "Elementor",
+        image: "elementor.png",
+        desc: "A WordPress page builder to customize your site without code.",
+        link: "https://elementor.com/"
+      },
+      beaverBuilder: {
+        title: "Beaver Builder",
+        image: "beaver-builder.png",
+        desc: "A drag and drop WordPress page builder.",
+        link: "https://www.wpbeaverbuilder.com/"
+      },
+      studioPress: {
+        title: "StudioPress",
+        image: "studiopress.png",
         desc:
-          "A free, online bootcamp to get you up and running as a web developer.",
-        link: "https://www.freecodecamp.org/"
+          "Buy a solid theme or build your own child theme based on the Genesis parent theme.",
+        link: "https://www.studiopress.com/"
       },
-      resource2: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
+      wordPressTv: {
+        title: "WordPress.tv",
+        image: "wordpresstv.png",
+        desc:
+          "Presentations, highlights, and more from WordCamps around the world.",
+        link: "https://wordpress.tv/"
       },
-      resource3: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
+      flywheel: {
+        title: "Flywheel",
+        image: "flywheel.png",
+        desc:
+          "Managed WordPress hosting build for designers and creative agencies.",
+        link: "https://getflywheel.com/"
       },
-      resource4: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
+      siteground: {
+        title: "SiteGround",
+        image: "siteground.png",
+        desc:
+          "Inexpensive, fast, and secure hosting for small to medium sites.",
+        link: "https://www.siteground.com/"
       }
     }
   },
   shopify: {
     title: "Shopify",
     desc: "Learn about Shopify.",
-    resourcesList: {
-      resource1: {
-        title: "Free Code Camp",
-        image: "sample.jpg",
-        desc:
-          "A free, online bootcamp to get you up and running as a web developer.",
-        link: "https://www.freecodecamp.org/"
-      },
-      resource2: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource3: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      },
-      resource4: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
-      }
-    }
+    resourcesList: {}
   },
-  business: {
-    title: "Business Resources",
-    desc: "Keep your business running efficiently.",
+  productivity: {
+    title: "Productivity",
+    desc: "Keep your web design business running efficiently.",
     resourcesList: {
-      resource1: {
-        title: "Free Code Camp",
-        image: "sample.jpg",
+      boomerang: {
+        title: "Boomerang for Gmail",
+        image: "boomerang.png",
         desc:
-          "A free, online bootcamp to get you up and running as a web developer.",
-        link: "https://www.freecodecamp.org/"
+          "Lets you take control of when you send and receive email messages.",
+        link: "https://www.boomeranggmail.com/"
       },
-      resource2: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
+      contentSnare: {
+        title: "Content Snare",
+        image: "contentsnare.png",
+        desc:
+          "Gather content and files in one place with automated client reminders.",
+        link: "https://contentsnare.com/"
       },
-      resource3: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
+      dubsado: {
+        title: "Dubsado",
+        image: "dubsado.png",
+        desc:
+          "A platform to build relationships, schedule appointments, streamline projects, and send invoices.",
+        link: "https://www.dubsado.com/"
       },
-      resource4: {
-        title: "Flexbox Froggy 2",
-        image: "sample.jpg",
-        desc: "A fun game that helps you to learn Flexbox.",
-        link: "https://flexboxfroggy.com/"
+      fireshot: {
+        title: "Fireshot",
+        image: "fireshot.png",
+        desc:
+          "A browser plugin to capture full web page screenshots instantly.",
+        link: "https://getfireshot.com/"
+      },
+      gist: {
+        title: "GitHub Gist",
+        image: "gist.png",
+        desc: "Instantly store and share code, notes and snippets.",
+        link: "https://gist.github.com"
+      },
+      lastpass: {
+        title: "LastPass",
+        image: "lastpass.png",
+        desc:
+          "Generate and store passwords while only having to remember 1 master password.",
+        link: "https://www.lastpass.com"
+      },
+      licecap: {
+        title: "LICEcap",
+        image: "LICEcap.png",
+        desc:
+          "Create simple animated screen captures and save them directly as gifs.",
+        link: "https://www.cockos.com/licecap/"
+      },
+      loom: {
+        title: "Loom",
+        image: "loom.png",
+        desc:
+          "Easy and free screen recorder. Quickly share screenshare tutorials with clients.",
+        link: "https://www.loom.com/"
+      },
+      namecheap: {
+        title: "Namecheap",
+        image: "namecheap.png",
+        desc:
+          "Easily buy domains and point it to hosting or email services elsewhere.",
+        link: "https://www.namecheap.com/"
+      },
+      onetimesecret: {
+        title: "One Time Secret",
+        image: "onetimesecret.png",
+        desc:
+          "Share a secret link with sensitive information that is available only one time.",
+        link: "https://onetimesecret.com/"
+      },
+      profitFirst: {
+        title: "Profit First",
+        image: "profit-first.png",
+        desc:
+          "A highly reviewed book that helps you to manage your business's finances.",
+        link: "https://profitfirstbook.com/"
+      },
+      stripe: {
+        title: "Stripe",
+        image: "stripe.png",
+        desc: "Online payment processing for internet businesses.",
+        link: "https://stripe.com"
+      },
+      toggl: {
+        title: "Toggl",
+        image: "toggl.png",
+        desc:
+          "A free and simple time tracker with powerful reports that works across devices.",
+        link: "https://stripe.com"
+      },
+      wave: {
+        title: "Wave Financial",
+        image: "wave.png",
+        desc:
+          "Free invoicing and accounting software with credit card processing and more.",
+        link: "https://www.waveapps.com/"
       }
     }
   }

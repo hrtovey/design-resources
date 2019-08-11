@@ -22,7 +22,7 @@ class Resource extends React.Component {
         <div className="resource__info">
           <img
             className="resource__image"
-            src={require("../images/" + this.props.details.image)}
+            src={require("../images/resources/" + this.props.details.image)}
             alt=""
           />
           <div className="resource__buttons">
@@ -57,7 +57,14 @@ class Resource extends React.Component {
             </a>
           </div>
           <div className="resource__text">
-            <p className="resource__title">{this.props.details.title}</p>
+            <a
+              href={this.props.details.link}
+              className="resource__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h2 className="resource__title">{this.props.details.title}</h2>
+            </a>
             <p className="resource__description">{this.props.details.desc}</p>
           </div>
         </div>

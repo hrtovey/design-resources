@@ -1,7 +1,6 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
 import axios from "axios";
-import svg from "../images/workplace.svg";
 
 class SubmitPage extends React.Component {
   state = {
@@ -60,9 +59,7 @@ class SubmitPage extends React.Component {
     }
     return (
       <div className="page submit-page">
-        <div className="page-half">
-          <img src={svg} alt="" />
-        </div>
+        <div className="page-half" />
         <div className="page-half">
           <h1 className="page__title">Submit a Resource</h1>
 

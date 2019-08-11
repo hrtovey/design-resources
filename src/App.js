@@ -1,6 +1,12 @@
 // To Do
-// Newsletter subscription (let you know about new resources)
-// Add real resources
+// - remove category from resource ids in case they're moved around in the future
+// - scroll to top on page change
+// - reduce size on background image
+// - make a favicon
+// - add more resources
+// - create Mailchimp workflow
+// - launch and test!
+// - share!
 
 import React from "react";
 import { NavLink, Link, BrowserRouter, Route } from "react-router-dom";
@@ -11,6 +17,7 @@ import ThankYouPage from "./Components/ThankYouPage";
 import AboutPage from "./Components/AboutPage";
 import ResourcesPage from "./Components/ResourcesPage";
 import HomePage from "./Components/HomePage";
+import NewsletterPage from "./Components/NewsletterPage";
 
 class App extends React.Component {
   constructor(props) {
@@ -101,35 +108,15 @@ class App extends React.Component {
                   </svg>{" "}
                   Favorites
                 </NavLink>
-                <NavLink to="/html" onClick={this.closeMenu}>
+                <NavLink to="/learn-to-code" onClick={this.closeMenu}>
                   <svg
                     className="nav-icon"
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 384 512"
+                    viewBox="0 0 640 512"
                   >
-                    <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" />
+                    <path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z" />
                   </svg>{" "}
-                  HTML
-                </NavLink>
-                <NavLink to="/css" onClick={this.closeMenu}>
-                  <svg
-                    className="nav-icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                  >
-                    <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z" />
-                  </svg>{" "}
-                  CSS
-                </NavLink>
-                <NavLink to="/javascript" onClick={this.closeMenu}>
-                  <svg
-                    className="nav-icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                  >
-                    <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z" />
-                  </svg>{" "}
-                  JavaScript
+                  Learn to Code
                 </NavLink>
                 <NavLink to="/design" onClick={this.closeMenu}>
                   <svg
@@ -209,43 +196,15 @@ class App extends React.Component {
                   </svg>{" "}
                   Shopify
                 </NavLink>
-                <NavLink to="/business" onClick={this.closeMenu}>
+                <NavLink to="/productivity" onClick={this.closeMenu}>
                   <svg
                     className="nav-icon"
-                    version="1.1"
-                    id="Layer_1"
                     xmlns="http://www.w3.org/2000/svg"
-                    x="0px"
-                    y="0px"
-                    viewBox="0 0 109.5 124.5"
+                    viewBox="0 0 640 512"
                   >
-                    <g>
-                      <path
-                        className="st0"
-                        d="M95.9,23.9c-0.1-0.6-0.6-1-1.1-1c-0.5,0-9.3-0.2-9.3-0.2s-7.4-7.2-8.1-7.9c-0.7-0.7-2.2-0.5-2.7-0.3
-		c0,0-1.4,0.4-3.7,1.1c-0.4-1.3-1-2.8-1.8-4.4c-2.6-5-6.5-7.7-11.1-7.7c0,0,0,0,0,0c-0.3,0-0.6,0-1,0.1c-0.1-0.2-0.3-0.3-0.4-0.5
-		c-2-2.2-4.6-3.2-7.7-3.1c-6,0.2-12,4.5-16.8,12.2c-3.4,5.4-6,12.2-6.8,17.5c-6.9,2.1-11.7,3.6-11.8,3.7c-3.5,1.1-3.6,1.2-4,4.5
-		c-0.3,2.5-9.5,73-9.5,73l76.4,13.2l33.1-8.2C109.5,115.8,96,24.5,95.9,23.9z M67.2,16.8c-1.8,0.5-3.8,1.2-5.9,1.8
-		c0-3-0.4-7.3-1.8-10.9C64,8.6,66.2,13.7,67.2,16.8z M57.2,19.9c-4,1.2-8.4,2.6-12.8,3.9c1.2-4.7,3.6-9.4,6.4-12.5
-		c1.1-1.1,2.6-2.4,4.3-3.2C56.9,11.6,57.3,16.5,57.2,19.9z M49.1,4c1.4,0,2.6,0.3,3.6,0.9C51.1,5.8,49.5,7,48,8.6
-		c-3.8,4.1-6.7,10.5-7.9,16.6c-3.6,1.1-7.2,2.2-10.5,3.2C31.7,18.8,39.8,4.3,49.1,4z"
-                      />
-                      <g>
-                        <path
-                          className="st1"
-                          d="M94.8,22.9c-0.5,0-9.3-0.2-9.3-0.2s-7.4-7.2-8.1-7.9c-0.3-0.3-0.6-0.4-1-0.5l0,109.7l33.1-8.2
-			c0,0-13.5-91.3-13.6-92C95.8,23.3,95.3,22.9,94.8,22.9z"
-                        />
-                        <path
-                          className="st2"
-                          d="M58,39.9l-3.8,14.4c0,0-4.3-2-9.4-1.6c-7.5,0.5-7.5,5.2-7.5,6.4c0.4,6.4,17.3,7.8,18.3,22.9
-			c0.7,11.9-6.3,20-16.4,20.6c-12.2,0.8-18.9-6.4-18.9-6.4l2.6-11c0,0,6.7,5.1,12.1,4.7c3.5-0.2,4.8-3.1,4.7-5.1
-			c-0.5-8.4-14.3-7.9-15.2-21.7c-0.7-11.6,6.9-23.4,23.7-24.4C54.7,38.2,58,39.9,58,39.9z"
-                        />
-                      </g>
-                    </g>
+                    <path d="M496 224c-79.59 0-144 64.41-144 144s64.41 144 144 144 144-64.41 144-144-64.41-144-144-144zm64 150.29c0 5.34-4.37 9.71-9.71 9.71h-60.57c-5.34 0-9.71-4.37-9.71-9.71v-76.57c0-5.34 4.37-9.71 9.71-9.71h12.57c5.34 0 9.71 4.37 9.71 9.71V352h38.29c5.34 0 9.71 4.37 9.71 9.71v12.58zM496 192c5.4 0 10.72.33 16 .81V144c0-25.6-22.4-48-48-48h-80V48c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h395.12c28.6-20.09 63.35-32 100.88-32zM320 96H192V64h128v32zm6.82 224H208c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h291.43C327.1 423.96 320 396.82 320 368c0-16.66 2.48-32.72 6.82-48z" />
                   </svg>{" "}
-                  Business
+                  Productivity
                 </NavLink>
               </nav>
             </div>
@@ -304,38 +263,12 @@ class App extends React.Component {
               )}
             />
             <Route
-              path="/html"
+              path="/learn-to-code"
               render={props => (
                 <ResourcesPage
                   {...props}
                   state={{
-                    resources: this.state.resources.html,
-                    favorited: this.state.favorited
-                  }}
-                  addToFavorites={this.addToFavorites}
-                />
-              )}
-            />
-            <Route
-              path="/css"
-              render={props => (
-                <ResourcesPage
-                  {...props}
-                  state={{
-                    resources: this.state.resources.css,
-                    favorited: this.state.favorited
-                  }}
-                  addToFavorites={this.addToFavorites}
-                />
-              )}
-            />
-            <Route
-              path="/javascript"
-              render={props => (
-                <ResourcesPage
-                  {...props}
-                  state={{
-                    resources: this.state.resources.javascript,
+                    resources: this.state.resources.learntocode,
                     favorited: this.state.favorited
                   }}
                   addToFavorites={this.addToFavorites}
@@ -408,12 +341,12 @@ class App extends React.Component {
               )}
             />
             <Route
-              path="/business"
+              path="/productivity"
               render={props => (
                 <ResourcesPage
                   {...props}
                   state={{
-                    resources: this.state.resources.business,
+                    resources: this.state.resources.productivity,
                     favorited: this.state.favorited
                   }}
                   addToFavorites={this.addToFavorites}
@@ -423,7 +356,7 @@ class App extends React.Component {
             <Route path="/submissions" component={SubmitPage} />
             <Route path="/thank-you" component={ThankYouPage} />
             <Route path="/about" component={AboutPage} />
-            <Route path="/weekly-digest" component={SubmitPage} />
+            <Route path="/weekly-digest" component={NewsletterPage} />
           </main>
         </BrowserRouter>
       </div>

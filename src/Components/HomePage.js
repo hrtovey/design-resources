@@ -7,14 +7,17 @@ const HomePage = props => {
     return (
       <div className="resources home">
         <div className="resources__title-container">
-          <h1 className="resources__title">Resources for Designers</h1>
-          <p className="resources__description">
-            A curated collection of useful resources for web designers like you.
-          </p>
-          <p className="resources__description newsletter-cta">
-            For updates, sign up for the{" "}
-            <Link to="/weekly-digest">Weekly Digest</Link>.
-          </p>
+          <div className="resources__title-section">
+            <h1 className="resources__title">Resources for Designers</h1>
+            <p className="resources__description">
+              A curated collection of useful resources for web designers like
+              you.
+            </p>
+            <p className="resources__description newsletter-cta">
+              For updates, sign up for the{" "}
+              <Link to="/weekly-digest">Weekly Digest</Link>.
+            </p>
+          </div>
         </div>
         <div className="resources__list-container">
           <ul className="resources__list">
