@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Resource from "./Resource";
 
+import { LazyLoadComponent } from "react-lazy-load-image-component";
+
 const HomePage = props => {
   if (props.state !== null) {
     return (
@@ -24,15 +26,17 @@ const HomePage = props => {
             {Object.keys(props.state.resources).map(topic =>
               Object.keys(props.state.resources[topic].resourcesList).map(
                 resource => (
-                  <Resource
-                    key={resource}
-                    index={resource}
-                    details={
-                      props.state.resources[topic].resourcesList[resource]
-                    }
-                    favorited={props.state.favorited.indexOf(resource) !== -1}
-                    addToFavorites={props.addToFavorites}
-                  />
+                  <LazyLoadComponent>
+                    <Resource
+                      key={resource}
+                      index={resource}
+                      details={
+                        props.state.resources[topic].resourcesList[resource]
+                      }
+                      favorited={props.state.favorited.indexOf(resource) !== -1}
+                      addToFavorites={props.addToFavorites}
+                    />
+                  </LazyLoadComponent>
                 )
               )
             )}

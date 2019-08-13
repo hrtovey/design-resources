@@ -1,5 +1,10 @@
+// To Do
+// - Google Analytics
+// - Privacy policy
+
 import React from "react";
 import { NavLink, Link, BrowserRouter, Route } from "react-router-dom";
+import ReactGA from "react-ga";
 import "./App.css";
 import resources from "./resources";
 import SubmitPage from "./Components/SubmitPage";
@@ -15,6 +20,9 @@ import ConfirmationPage from "./Components/ConfirmationPage";
 class App extends React.Component {
   constructor(props) {
     super(props);
+
+    ReactGA.initialize("UA-117432657-2");
+    ReactGA.pageview(window.location.pathname + window.location.search);
     this.state = {
       resources: resources,
       favorites: {
