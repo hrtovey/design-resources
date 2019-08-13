@@ -9,6 +9,21 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+textarea {
+  font-family: "Roboto";
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald";
+}
 /* App */
 
 /* Header */
@@ -405,7 +420,8 @@ a:hover,
   align-items: stretch;
 }
 
-.newsletter-page {
+.newsletter-page,
+.thanks-page {
   padding: 0;
   max-width: 100%;
   min-height: 100vh;
@@ -419,7 +435,8 @@ a:hover,
   max-width: 500px;
 }
 
-.newsletter-page .page-container {
+.newsletter-page .page-container,
+.thanks-page .page-container {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -432,8 +449,12 @@ a:hover,
 
 .page-half:first-child,
 .newsletter-page,
+.thanks-page,
 .home .resources__title-container {
   background-image: url(./images/Inn.png);
+}
+
+.home .resources__title-container {
   background-size: contain;
 }
 
@@ -511,4 +532,21 @@ textarea:focus {
 .sign-up:hover {
   background-color: #ffc73f;
 }
-/* Newsletter Sign-up */
+
+/* About Page */
+.helpful-designers__list {
+  list-style-image: url("./images/star.png");
+  display: grid;
+}
+
+@media screen and (min-width: 750px) {
+  .helpful-designers__list {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .helpful-designers__list {
+    grid-template-columns: repeat(3, auto);
+  }
+}

@@ -9,6 +9,13 @@ const resources = {
         desc: "Discover the latest work from top online portfolios.",
         link: "https://www.behance.net/"
       },
+      colorHunt: {
+        title: "Color Hunt",
+        image: "colorhunt.png",
+        desc:
+          "A free and open platform for color inspiration with thousands of hand-picked color palettes.",
+        link: "https://colorhunt.co/"
+      },
       coverr: {
         title: "Coverr",
         image: "coverr.png",
@@ -118,6 +125,20 @@ const resources = {
           "A simplified graphic-design tool website. Create designs online with a drag-and-drop feature.",
         link: "https://www.canva.com/"
       },
+      colorZilla: {
+        title: "ColorZilla",
+        image: "colorzilla.png",
+        desc:
+          "A browser plugin that is an all-in-one advanced eyedropper, color picker, gradient generator and more.",
+        link: "https://www.colorzilla.com/"
+      },
+      cssPeeper: {
+        title: "CSS Peeper",
+        image: "csspeeper.png",
+        desc:
+          "Inspect styles in a simple, well-organized and beautiful way with this Chrome extension.",
+        link: "https://csspeeper.com/"
+      },
       realFaviconGenerator: {
         title: "Real Favicon Generator",
         image: "real-favicon-generator.png",
@@ -163,7 +184,7 @@ const resources = {
   },
   typography: {
     title: "Typography",
-    desc: "Get help with typography.",
+    desc: "Typography tools and inspiration.",
     resourcesList: {
       archetypeApp: {
         title: "Archetype",
@@ -171,6 +192,13 @@ const resources = {
         desc:
           "An app that lets designers very quickly and easily create consistent typography styling.",
         link: "https://archetypeapp.com"
+      },
+      fontFaceNinja: {
+        title: "Fontface Ninja",
+        image: "fontface-ninja.png",
+        desc:
+          "A free browser extension that lets you inspect, try, buy, and bookmark any fonts on any website.",
+        link: "https://fontface.ninja/"
       },
       fontSquirrel: {
         title: "Font Squirrel",
@@ -186,6 +214,12 @@ const resources = {
           "Helps designers pair Google fonts together. See a variety of combinations out in the wild.",
         link: "https://fontpair.co/"
       },
+      myFonts: {
+        title: "MyFonts",
+        image: "myfonts.png",
+        desc: "A platform full of professional fonts for any product.",
+        link: "https://www.myfonts.com/"
+      },
       typespiration: {
         title: "Typespiration",
         image: "typespiration.png",
@@ -197,6 +231,13 @@ const resources = {
         image: "typography-handbook.png",
         desc: "A concise, referential guide on best web typographic practices.",
         link: "http://typographyhandbook.com/"
+      },
+      whatFont: {
+        title: "WhatFont",
+        image: "what-font.png",
+        desc:
+          "A bookmarklet or browser extension that lets you get the font information about the text you're hovering over. Also available in iOS.",
+        link: "http://www.chengyinliu.com/whatfont.html"
       }
     }
   },
@@ -237,7 +278,7 @@ const resources = {
   learntocode: {
     title: "Learn to Code",
     desc:
-      "Learn the HTML, CSS, and JavaScript skills to become an even better web designer.",
+      "Learn HTML, CSS, and JavaScript skills to become an even better web designer.",
     resourcesList: {
       codepen: {
         title: "CodePen",
@@ -311,7 +352,8 @@ const resources = {
   },
   accessibility: {
     title: "Accessibility",
-    desc: "Learn about Accessibility.",
+    desc:
+      "Guides, tools, and other resources to make your websites more accessible.",
     resourcesList: {
       contrastRatio: {
         title: "Contrast Ratio",
@@ -338,14 +380,40 @@ const resources = {
   },
   squarespace: {
     title: "Squarespace",
-    desc: "Learn about Squarespace.",
+    desc: "Squarespace plugins, themes, courses, and more.",
     resourcesList: {
+      devonStank: {
+        title: "Devon Stank",
+        image: "devon-stank.png",
+        desc:
+          "A Squarespace code shop with useful plugins for your Squarespace website.",
+        link: "https://www.devonstank.com/squarespace-code-shop"
+      },
       ghostPlugins: {
         title: "Ghost Plugins",
         image: "ghostplugins.png",
         desc:
           "An ever growing library of plugins and template for Squarespace.",
         link: "https://www.ghostplugins.com/"
+      },
+      sixty: {
+        title: "Sixty",
+        image: "usesixty.png",
+        desc: "Get real-time help via screenshare with any Squarespace task.",
+        link: "https://www.usesixty.com/"
+      },
+      sqspThemes: {
+        title: "Sqspthemes.com",
+        image: "sqspthemes.png",
+        desc: "A one-stop shop for Squarespace themes, plugins, and more.",
+        link: "https://www.sqspthemes.com/"
+      },
+      blockIdentifier: {
+        title: "Squarespace Collection/Block Identifier",
+        image: "squarespace-identifier.png",
+        desc: "A Chrome extension that helps you to find collection/block IDs.",
+        link:
+          "https://chrome.google.com/webstore/detail/squarespace-collectionblo/bggpdfnccodbnmcndckmeehdjkjojkde"
       },
       fontOptimizer: {
         title: "Squarespace Font Optimizer",
@@ -354,12 +422,12 @@ const resources = {
           "Give your website a performance boost by getting rid of unnecessary fonts.",
         link: "https://cheers-studios.com/squarespace-font-optimizer"
       },
-      blockIdentifier: {
-        title: "Squarespace Collection/Block Identifier",
-        image: "squarespace-identifier.png",
-        desc: "A Chrome extension that helps you to find collection/block IDs.",
-        link:
-          "https://chrome.google.com/webstore/detail/squarespace-collectionblo/bggpdfnccodbnmcndckmeehdjkjojkde"
+      squarespaceDesignGuild: {
+        title: "Squarespace Design Guild",
+        image: "square-design-guild.png",
+        desc:
+          "A Slack community channel + online courses + mastermind group for Squarespace designers.",
+        link: "https://www.squaredesignguild.com/"
       },
       toolsExtension: {
         title: "Squarespace Websites Tools Extension",
@@ -369,17 +437,18 @@ const resources = {
         link:
           "https://www.squarewebsites.org/squarespacewebsites-tools-extension"
       },
-      sixty: {
-        title: "Sixty",
-        image: "usesixty.png",
-        desc: "Get real-time help via screenshare with any Squarespace task.",
-        link: "https://www.usesixty.com/"
+      thirtyEightVisuals: {
+        title: "Thirty Eight Visuals",
+        image: "thirtyeightvisuals.png",
+        desc:
+          "Squarespace plugins and trainings covering a variety of topics including mobile training.",
+        link: "https://thirtyeightvisuals.com/products"
       }
     }
   },
   wordpress: {
     title: "WordPress",
-    desc: "Learn about WordPress.",
+    desc: "WordPress themes, plugins, courses, and more.",
     resourcesList: {
       elementor: {
         title: "Elementor",
@@ -425,7 +494,7 @@ const resources = {
   },
   shopify: {
     title: "Shopify",
-    desc: "Learn about Shopify.",
+    desc: "Shopify themes, apps, courses, and more.",
     resourcesList: {
       eCommTalk: {
         title: "eCommTalk",
@@ -460,6 +529,13 @@ const resources = {
     title: "Productivity",
     desc: "Keep your web design business running efficiently.",
     resourcesList: {
+      alfredApp: {
+        title: "Alfred",
+        image: "alfred-app.png",
+        desc:
+          "A macOS app which boosts your efficiency with hotkeys, text expansion, and more.",
+        link: "https://www.alfredapp.com/"
+      },
       asana: {
         title: "Asana",
         image: "asana.png",
@@ -481,6 +557,21 @@ const resources = {
           "Gather content and files in one place with automated client reminders.",
         link: "https://contentsnare.com/"
       },
+      copyFolder: {
+        title: "Copy Folder",
+        image: "copyfolder.png",
+        desc:
+          "A Chrome extension that lets you copy a Google Drive folder, including all subfolders and contents.",
+        link:
+          "https://chrome.google.com/webstore/detail/copy-folder/kfbicpdhiofpicipfggljdhjokjblnhl?hl=en"
+      },
+      drafts: {
+        title: "Drafts",
+        image: "drafts.png",
+        desc:
+          "A quick notebook, handy editor, and writing automation tool, all in one. For iOS and macOS.",
+        link: "https://getdrafts.com/"
+      },
       dubsado: {
         title: "Dubsado",
         image: "dubsado.png",
@@ -495,6 +586,14 @@ const resources = {
           "A note-taking app that helps you to capture and prioritize ideas, projects, and to-do lists.",
         link: "https://evernote.com/"
       },
+      facebookPixelHelper: {
+        title: "Facebook Pixel Helper",
+        image: "pixel-helper.png",
+        desc:
+          "A tool that helps you validate your Facebook Pixel. Verify that it works properly and troubleshoot errors.",
+        link:
+          "https://developers.facebook.com/docs/facebook-pixel/support/pixel-helper/"
+      },
       fireshot: {
         title: "Fireshot",
         image: "fireshot.png",
@@ -502,11 +601,33 @@ const resources = {
           "A browser plugin to capture full web page screenshots instantly.",
         link: "https://getfireshot.com/"
       },
+      fullPageScreenCapture: {
+        title: "Full Page Screen Capture",
+        image: "full-page-screen-capture.png",
+        desc:
+          "A Chrome extension that lets you capture a screenshot of your current page in entirety.",
+        link:
+          "https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl"
+      },
       gist: {
         title: "GitHub Gist",
         image: "gist.png",
         desc: "Instantly store and share code, notes and snippets.",
         link: "https://gist.github.com"
+      },
+      gmailSnippets: {
+        title: "Gmail Snippets",
+        image: "gmail-snippets.png",
+        desc:
+          "A Google Chrome extension that lets you create keyboard shortcuts to write full sentences. Create a snippet library.",
+        link: "https://www.gmail-snippets.com/"
+      },
+      harvest: {
+        title: "Harvest",
+        image: "harvest.png",
+        desc:
+          "Simple time tracking, fast online invoicing, and powerful reporting software.",
+        link: "https://www.getharvest.com/"
       },
       lastpass: {
         title: "LastPass",
@@ -536,12 +657,33 @@ const resources = {
           "Easily buy domains and point it to hosting or email services elsewhere.",
         link: "https://www.namecheap.com/"
       },
+      neshawoolery: {
+        title: "Nesha Woolery",
+        image: "nesha-woolery.png",
+        desc:
+          "A podcast, blog, and courses to help web designers organize and simplify their businesses.",
+        link: "https://neshawoolery.com/"
+      },
+      notion: {
+        title: "Notion",
+        image: "notion.png",
+        desc:
+          "An all-in-one workspace tool to write, plan, collaborate, and get organized.",
+        link: "https://www.notion.so/"
+      },
       onetimesecret: {
         title: "One Time Secret",
         image: "onetimesecret.png",
         desc:
           "Share a secret link with sensitive information that is available only one time.",
         link: "https://onetimesecret.com/"
+      },
+      pocket: {
+        title: "Pocket",
+        image: "getpocket.png",
+        desc:
+          "Save articles, videos and stories from any publication, page or app.",
+        link: "https://getpocket.com/"
       },
       profitFirst: {
         title: "Profit First",
@@ -556,6 +698,20 @@ const resources = {
         desc: "Online payment processing for internet businesses.",
         link: "https://stripe.com"
       },
+      textExpander: {
+        title: "TextExpander",
+        image: "text-expander.png",
+        desc:
+          "A cross-platform tool that lets you instantly insert snippets of text from a repository of emails, boilerplate, and other content.",
+        link: "https://textexpander.com"
+      },
+      thefutur: {
+        title: "thefutur",
+        image: "thefutur.png",
+        desc:
+          "Content, courses, and tools designed to help creative professionals.",
+        link: "https://www.thefutur.com/"
+      },
       tinyPng: {
         title: "TinyPNG",
         image: "tinypng.png",
@@ -563,12 +719,26 @@ const resources = {
           "Speed up your websites by compressing your .png and .jpg photos quickly.",
         link: "https://tinypng.com/"
       },
+      toby: {
+        title: "Toby",
+        image: "gettoby.png",
+        desc:
+          "Organize your browser tabs into Toby so you can access key resources in one click instead of seven.",
+        link: "http://www.gettoby.com/"
+      },
       toggl: {
         title: "Toggl",
         image: "toggl.png",
         desc:
           "A free and simple time tracker with powerful reports that works across devices.",
         link: "https://stripe.com"
+      },
+      trello: {
+        title: "Trello",
+        image: "trello.png",
+        desc:
+          "An organization app with boards, lists, and cards to help you work more collaboratively.",
+        link: "https://trello.com/en"
       },
       wave: {
         title: "Wave Financial",

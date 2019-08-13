@@ -1,11 +1,3 @@
-// To Do
-// use media queries so grid is mostly 320
-// - make a favicon
-// - add more resources
-// - create Mailchimp workflow
-// - launch and test!
-// - share!
-
 import React from "react";
 import { NavLink, Link, BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
@@ -17,6 +9,8 @@ import ResourcesPage from "./Components/ResourcesPage";
 import HomePage from "./Components/HomePage";
 import NewsletterPage from "./Components/NewsletterPage";
 import ScrollToTop from "./Components/ScrollToTop";
+import AlmostFinishedPage from "./Components/AlmostFinishedPage";
+import ConfirmationPage from "./Components/ConfirmationPage";
 
 class App extends React.Component {
   constructor(props) {
@@ -25,7 +19,8 @@ class App extends React.Component {
       resources: resources,
       favorites: {
         title: "Favorites",
-        desc: "See your favorites here.",
+        desc:
+          "Click the heart on your favorite resources to collect them all in one place.",
         resourcesList: {}
       },
       favorited: [],
@@ -429,6 +424,8 @@ class App extends React.Component {
               <Route path="/thank-you" component={ThankYouPage} />
               <Route path="/about" component={AboutPage} />
               <Route path="/weekly-digest" component={NewsletterPage} />
+              <Route path="/almost-finished" component={AlmostFinishedPage} />
+              <Route path="/you-are-subscribed" component={ConfirmationPage} />
             </main>
           </ScrollToTop>
         </BrowserRouter>

@@ -10,8 +10,8 @@ const HomePage = props => {
           <div className="resources__title-section">
             <h1 className="resources__title">Resources for Designers</h1>
             <p className="resources__description">
-              A curated collection of useful resources for web designers like
-              you.
+              A curated collection of 100+ useful resources for web designers
+              like you.
             </p>
             <p className="resources__description newsletter-cta">
               For updates, sign up for the{" "}
@@ -30,10 +30,7 @@ const HomePage = props => {
                     details={
                       props.state.resources[topic].resourcesList[resource]
                     }
-                    favorited={
-                      props.state.favorited.indexOf(resource) !==
-                      -1
-                    }
+                    favorited={props.state.favorited.indexOf(resource) !== -1}
                     addToFavorites={props.addToFavorites}
                   />
                 )
