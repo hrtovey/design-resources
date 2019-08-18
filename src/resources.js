@@ -423,7 +423,7 @@ const resources = {
         link: "https://cheers-studios.com/squarespace-font-optimizer"
       },
       squarespaceDesignGuild: {
-        title: "Squarespace Design Guild",
+        title: "Square Design Guild",
         image: "square-design-guild.png",
         desc:
           "A Slack community channel + online courses + mastermind group for Squarespace designers.",

@@ -1,7 +1,3 @@
-// To Do
-// - Google Analytics
-// - Privacy policy
-
 import React from "react";
 import { NavLink, Link, BrowserRouter, Route } from "react-router-dom";
 import ReactGA from "react-ga";
@@ -16,6 +12,7 @@ import NewsletterPage from "./Components/NewsletterPage";
 import ScrollToTop from "./Components/ScrollToTop";
 import AlmostFinishedPage from "./Components/AlmostFinishedPage";
 import ConfirmationPage from "./Components/ConfirmationPage";
+import { NONAME } from "dns";
 
 class App extends React.Component {
   constructor(props) {
@@ -79,7 +76,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div className={this.state.isActive ? "App active" : "App"}>
         <BrowserRouter>
           <ScrollToTop>
             <header className={this.state.isActive ? "active" : ""}>
@@ -266,6 +263,24 @@ class App extends React.Component {
               </div>
             </header>
             <main>
+              <img
+                style={{ display: "none" }}
+                src={require("./images/get-design-resources.png")}
+                alt=""
+                data-pin-description="A curated collection of 100+ useful resources for web designers."
+              />
+              <img
+                style={{ display: "none" }}
+                src={require("./images/100-resources-for-designers.png")}
+                alt=""
+                data-pin-description="A curated collection of 100+ useful resources for web designers."
+              />
+              <img
+                style={{ display: "none" }}
+                src={require("./images/resources-for-designers.png")}
+                alt=""
+                data-pin-description="A curated collection of 100+ useful resources for web designers."
+              />
               <button className="open menu-button" onClick={this.openMenu}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
