@@ -41,6 +41,14 @@ const designers = {
   kathOMalley: {
     name: "Kath O'Malley",
     url: "https://www.kathomalley.com/"
+  },
+  emilyKenCairn: {
+    name: "Emily KenCairn",
+    url: "https://apiarystud.io"
+  },
+  francesOReilly: {
+    name: "Frances O'Reilly",
+    url: "https://theutility.studio/"
   }
 };
 

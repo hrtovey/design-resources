@@ -23,11 +23,11 @@ class SubmitPage extends React.Component {
                 name="mc-embedded-subscribe-form"
                 className="validate"
                 target="_blank"
-                novalidate
+                noValidate
               >
                 <div id="mc_embed_signup_scroll">
-                  <div class="mc-field-group">
-                    <label for="mce-EMAIL">Email Address </label>
+                  <div className="mc-field-group">
+                    <label htmlFor="mce-EMAIL">Email Address </label>
                     <input
                       type="email"
                       name="EMAIL"
@@ -42,11 +42,10 @@ class SubmitPage extends React.Component {
                     <input
                       type="text"
                       name="b_64b586aa12086c861079667e8_2daca6395e"
-                      tabindex="-1"
-                      value=""
+                      tabIndex="-1"
                     />
                   </div>
-                  <div class="clear">
+                  <div className="clear">
                     <input
                       type="submit"
                       value="Subscribe"

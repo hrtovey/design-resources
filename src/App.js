@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink, Link, BrowserRouter, Route } from "react-router-dom";
-import ReactGA from "react-ga";
 import "./App.css";
 import resources from "./resources";
 import SubmitPage from "./Components/SubmitPage";
@@ -12,14 +11,11 @@ import NewsletterPage from "./Components/NewsletterPage";
 import ScrollToTop from "./Components/ScrollToTop";
 import AlmostFinishedPage from "./Components/AlmostFinishedPage";
 import ConfirmationPage from "./Components/ConfirmationPage";
-import { NONAME } from "dns";
+import ReactGA from "react-ga";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-
-    ReactGA.initialize("UA-117432657-2");
-    ReactGA.pageview(window.location.pathname + window.location.search);
     this.state = {
       resources: resources,
       favorites: {
@@ -31,6 +27,8 @@ class App extends React.Component {
       favorited: [],
       isActive: false
     };
+
+    ReactGA.initialize("UA-117432657-2");
   }
 
   componentDidMount() {
@@ -42,6 +40,10 @@ class App extends React.Component {
     if (favorited !== null) {
       this.setState({ favorited: favorited });
     }
+  }
+
+  componentDidUpdate() {
+    ReactGA.pageview(window.location.pathname);
   }
 
   addToFavorites = (index, details) => {
@@ -239,6 +241,16 @@ class App extends React.Component {
                     </svg>{" "}
                     Productivity
                   </NavLink>
+                  <NavLink to="/freebies" onClick={this.closeMenu}>
+                    <svg
+                      className="nav-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 640 512"
+                    >
+                      <path d="M496 224c-79.59 0-144 64.41-144 144s64.41 144 144 144 144-64.41 144-144-64.41-144-144-144zm64 150.29c0 5.34-4.37 9.71-9.71 9.71h-60.57c-5.34 0-9.71-4.37-9.71-9.71v-76.57c0-5.34 4.37-9.71 9.71-9.71h12.57c5.34 0 9.71 4.37 9.71 9.71V352h38.29c5.34 0 9.71 4.37 9.71 9.71v12.58zM496 192c5.4 0 10.72.33 16 .81V144c0-25.6-22.4-48-48-48h-80V48c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h395.12c28.6-20.09 63.35-32 100.88-32zM320 96H192V64h128v32zm6.82 224H208c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h291.43C327.1 423.96 320 396.82 320 368c0-16.66 2.48-32.72 6.82-48z" />
+                    </svg>{" "}
+                    Freebies
+                  </NavLink>
                 </nav>
               </div>
               <div className="footer">
@@ -307,7 +319,8 @@ class App extends React.Component {
                     {...props}
                     state={{
                       resources: this.state.favorites,
-                      favorited: this.state.favorited
+                      favorited: this.state.favorited,
+                      pageType: "favorites"
                     }}
                     addToFavorites={this.addToFavorites}
                   />
@@ -437,6 +450,19 @@ class App extends React.Component {
                     {...props}
                     state={{
                       resources: this.state.resources.productivity,
+                      favorited: this.state.favorited
+                    }}
+                    addToFavorites={this.addToFavorites}
+                  />
+                )}
+              />
+              <Route
+                path="/freebies"
+                render={props => (
+                  <ResourcesPage
+                    {...props}
+                    state={{
+                      resources: this.state.resources.freebies,
                       favorited: this.state.favorited
                     }}
                     addToFavorites={this.addToFavorites}

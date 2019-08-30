@@ -17,7 +17,8 @@ class Resource extends React.Component {
       title: PropTypes.string,
       image: PropTypes.string,
       desc: PropTypes.string,
-      link: PropTypes.string
+      link: PropTypes.string,
+      new: PropTypes.bool
     })
   };
 
@@ -38,6 +39,7 @@ class Resource extends React.Component {
       <LazyLoadComponent>
         <li className="resource" onMouseLeave={this.removeTooltip}>
           <div className="resource__info">
+            {this.props.details.new ? <span className="new">New</span> : ""}
             <img
               className="resource__image"
               src={require("../images/resources/" + this.props.details.image)}

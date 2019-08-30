@@ -4,7 +4,7 @@ import Resource from "./Resource";
 const ResourcesPage = props => {
   if (props.state !== null) {
     return (
-      <div className="resources">
+      <div className={"resources " + props.state.pageType}>
         <div className="resources__title-container">
           <h1 className="resources__title">{props.state.resources.title}</h1>
           <p className="resources__description">{props.state.resources.desc}</p>
