@@ -28,18 +28,10 @@ class AboutPage extends React.Component {
           </li>
           <li>all designers!</li>
         </ul>
-        <h2>Submissions</h2>
-        <p>
-          If you have created a great resource or want to add one of your
-          favorites to the list, head over to the Submissions page. I appreciate
-          any help in keeping this list of resources up-to-date and spectacular!
-          If your submission is approved, you can choose to be credited with a
-          link back to your website.
-        </p>
         <h2>Thank You For Your Help</h2>
         <p>
           Thank you to the following designers for submitting their favorite
-          resources!
+          resources to get this list up and running!
         </p>
 
         <ul className="helpful-designers__list">
@@ -51,6 +43,9 @@ class AboutPage extends React.Component {
             />
           ))}
         </ul>
+        <div className="bmc-button-container">
+        <a className="bmc-button" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/htovey"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="Buy me a coffee" /><span style={{marginLeft:5}}>Buy me a coffee</span></a>
+        </div>
       </div>
     );
   }

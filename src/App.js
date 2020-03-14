@@ -254,20 +254,20 @@ class App extends React.Component {
                 </nav>
               </div>
               <div className="footer">
-                <Link
+                {/* <Link
                   className="sign-up"
                   to="/weekly-digest"
                   onClick={this.closeMenu}
                 >
                   Weekly Digest
-                </Link>
+                </Link> */}
                 <nav className="secondary-nav">
                   <Link to="/about" onClick={this.closeMenu}>
                     About
                   </Link>
-                  <Link to="/submissions" onClick={this.closeMenu}>
+                  {/* <Link to="/submissions" onClick={this.closeMenu}>
                     Submit
-                  </Link>
+                  </Link> */}
                 </nav>
                 <p className="copyright">
                   Made by <a href="https://heathertovey.com">Heather Tovey</a>
@@ -469,12 +469,12 @@ class App extends React.Component {
                   />
                 )}
               />
-              <Route path="/submissions" component={SubmitPage} />
-              <Route path="/thank-you" component={ThankYouPage} />
+              {/* <Route path="/submissions" component={SubmitPage} /> */}
+              {/* <Route path="/thank-you" component={ThankYouPage} /> */}
               <Route path="/about" component={AboutPage} />
-              <Route path="/weekly-digest" component={NewsletterPage} />
-              <Route path="/almost-finished" component={AlmostFinishedPage} />
-              <Route path="/you-are-subscribed" component={ConfirmationPage} />
+              {/* <Route path="/weekly-digest" component={NewsletterPage} /> */}
+              {/* <Route path="/almost-finished" component={AlmostFinishedPage} /> */}
+              {/* <Route path="/you-are-subscribed" component={ConfirmationPage} /> */}
             </main>
           </ScrollToTop>
         </BrowserRouter>

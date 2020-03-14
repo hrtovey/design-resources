@@ -29,7 +29,7 @@ class SubmitPage extends React.Component {
     });
 
     await axios({
-      url: `${config.cors}${config.formUrl}`,
+      url: `${config.formUrl}`,
       method: "post",
       data: formData,
       responseType: "json"

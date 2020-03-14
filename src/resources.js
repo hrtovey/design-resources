@@ -3,22 +3,6 @@ const resources = {
     title: "Design Inspiration and Resources",
     desc: "Find inspiration for your newest web design project.",
     resourcesList: {
-      denseDiscovery: {
-        title: "Dense Discovery",
-        image: "dense-discovery.png",
-        desc:
-          "A weekly newsletter helping web workers be productive, stay inspired, and think critically.",
-        link: "https://www.densediscovery.com/",
-        new: true
-      },
-      logoDesignLove: {
-        title: "Logo Design Love",
-        image: "logo-design-love.png",
-        desc:
-          "A website and bestselling book for designers with an interest in logos and brand identity design.",
-        link: "https://www.logodesignlove.com/",
-        new: true
-      },
       behance: {
         title: "Behance",
         image: "behance.png",
@@ -26,6 +10,7 @@ const resources = {
         link: "https://www.behance.net/"
       },
       colorHunt: {
+        title: "Color Hunt",
         image: "colorhunt.png",
         desc:
           "A free and open platform for color inspiration with thousands of hand-picked color palettes.",
@@ -44,6 +29,13 @@ const resources = {
         desc:
           "A site created to spread awareness of dirty tricks websites use against you. A good what not to do.",
         link: "https://www.darkpatterns.org/"
+      },
+      denseDiscovery: {
+        title: "Dense Discovery",
+        image: "dense-discovery.png",
+        desc:
+          "A weekly newsletter helping web workers be productive, stay inspired, and think critically.",
+        link: "https://www.densediscovery.com/",
       },
       dribbble: {
         title: "Dribbble",
@@ -86,6 +78,13 @@ const resources = {
           "A curated collection of the finer details of design, updated every day.",
         link: "https://littlebigdetails.com/"
       },
+      logoDesignLove: {
+        title: "Logo Design Love",
+        image: "logo-design-love.png",
+        desc:
+          "A website and bestselling book for designers with an interest in logos and brand identity design.",
+        link: "https://www.logodesignlove.com/",
+      },
       logoPond: {
         title: "Logopond",
         image: "logopond.png",
@@ -119,21 +118,13 @@ const resources = {
     title: "Design Tools",
     desc: "Tools to help you design!",
     resourcesList: {
-      coolors: {
-        title: "Coolors",
-        image: "coolors.png",
-        desc:
-          "The super fast color schemes generator. Create, save, and share perfect palettes in seconds!",
-        link: "https://coolors.co/",
-        new: true
-      },
       procreate: {
         title: "Procreate",
         image: "procreate.png",
         desc:
           "Designed for tablet and phone, this app lets you create amazing graphics wherever you are.",
         link: "https://procreate.art/",
-        new: true
+        
       },
       snazzyMaps: {
         title: "Snazzy Maps",
@@ -141,7 +132,7 @@ const resources = {
         desc:
           "A repository of different color schemes for Google Maps for web designers.",
         link: "https://snazzymaps.com/",
-        new: true
+        
       },
       adobeXD: {
         title: "Adobe XD",
@@ -170,6 +161,14 @@ const resources = {
         desc:
           "A browser plugin that is an all-in-one advanced eyedropper, color picker, gradient generator and more.",
         link: "https://www.colorzilla.com/"
+      },
+      coolors: {
+        title: "Coolors",
+        image: "coolors.png",
+        desc:
+          "The super fast color schemes generator. Create, save, and share perfect palettes in seconds!",
+        link: "https://coolors.co/",
+        
       },
       cssPeeper: {
         title: "CSS Peeper",
@@ -212,6 +211,14 @@ const resources = {
           "A design deliverable consisting of fonts, colors, and interface elements that communicates the evolution of a visual brand.",
         link: "http://styletil.es/"
       },
+      unscreen: {
+        title: "Unscreen",
+        image: "unscreen.png",
+        desc:
+          "Remove the background of any video - 100% automatically, online & free! Goodbye Greenscreen. Hello Unscreen.",
+        link: "https://www.unscreen.com/",
+        new: true
+      },
       zeplin: {
         title: "Zeplin",
         image: "zeplin.png",
@@ -230,7 +237,7 @@ const resources = {
         image: "fonty.png",
         desc: "A simple tool for testing web fonts directly on live sites.",
         link: "https://fonty.dizoo.bg/",
-        new: true
+        
       },
       fount: {
         title: "Fount",
@@ -238,7 +245,7 @@ const resources = {
         desc:
           "Identify web fonts on any site. Shows you what web font you're actually seeing (not just what you should see).",
         link: "https://fount.artequalswork.com/",
-        new: true
+        
       },
       indentifont: {
         title: "Identifont",
@@ -246,7 +253,7 @@ const resources = {
         desc:
           "Identify fonts by appearance, find fonts by name, find picture or symbol fonts, or find fonts by designer or publisher.",
         link: "http://www.identifont.com/",
-        new: true
+        
       },
       quotesAndAccents: {
         title: "Quotes and Accents",
@@ -254,7 +261,7 @@ const resources = {
         desc:
           "A handy reference for remembering how to type typographical details like smart quotes and accented characters on a Mac.",
         link: "http://quotesandaccents.com/",
-        new: true
+        
       },
       typeWolf: {
         title: "Typewolf",
@@ -262,7 +269,7 @@ const resources = {
         desc:
           "See what's trending in type. An independent typography resource to help  you find inspiration!",
         link: "https://www.typewolf.com/",
-        new: true
+        
       },
       archetypeApp: {
         title: "Archetype",
@@ -329,7 +336,7 @@ const resources = {
         desc:
           "Exclusive, hand-curated collection of beautiful royalty-free stock photography and video.",
         link: "https://www.stocksy.com/",
-        new: true
+        
       },
       nounProject: {
         title: "Noun Project",
@@ -620,7 +627,7 @@ const resources = {
         image: "dropbox.png",
         desc: "A central place to access and share files. Simplify your work.",
         link: "https://www.dropbox.com",
-        new: true
+        
       },
       shift: {
         title: "Shift",
@@ -628,7 +635,7 @@ const resources = {
         desc:
           "The workstation for productive people. A desktop app for streamlining your accounts, apps, and workflows.",
         link: "https://tryshift.com/",
-        new: true
+        
       },
       alfredApp: {
         title: "Alfred",
@@ -860,7 +867,7 @@ const resources = {
         desc:
           "Download 6 free goods every week. (Just make sure to check the licensing to see what projects you can use these on.)",
         link: "https://creativemarket.com/free-goods",
-        new: true
+        
       }
     }
   }
