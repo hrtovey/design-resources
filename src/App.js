@@ -2,15 +2,10 @@ import React from "react";
 import { NavLink, Link, BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import resources from "./resources";
-import SubmitPage from "./Components/SubmitPage";
-import ThankYouPage from "./Components/ThankYouPage";
 import AboutPage from "./Components/AboutPage";
 import ResourcesPage from "./Components/ResourcesPage";
 import HomePage from "./Components/HomePage";
-import NewsletterPage from "./Components/NewsletterPage";
 import ScrollToTop from "./Components/ScrollToTop";
-import AlmostFinishedPage from "./Components/AlmostFinishedPage";
-import ConfirmationPage from "./Components/ConfirmationPage";
 import ReactGA from "react-ga";
 
 class App extends React.Component {

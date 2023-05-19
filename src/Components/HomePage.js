@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Resource from "./Resource";
 
 const HomePage = props => {
@@ -12,10 +11,6 @@ const HomePage = props => {
             <p className="resources__description">
               A curated collection of 100+ useful resources for web designers
               like you.
-            </p>
-            <p className="resources__description newsletter-cta">
-              For updates, sign up for the{" "}
-              <Link to="/weekly-digest">Weekly Digest</Link>.
             </p>
           </div>
         </div>
