@@ -3,6 +3,13 @@ const resources = {
     title: "Design Inspiration and Resources",
     desc: "Find inspiration for your newest web design project.",
     resourcesList: {
+      aguide: {
+        title: "A Guide to UX Design and Design Thinking for Kids",
+        image: "aguide.png",
+        desc: "Find out how to give your kids these valuable design skills today. Thanks for the tip, Eliza!",
+        link: "https://praxent.com/blog/ux-design-thinking-for-kids-guide",
+        new: true
+      },
       behance: {
         title: "Behance",
         image: "behance.png",
@@ -216,8 +223,7 @@ const resources = {
         image: "unscreen.png",
         desc:
           "Remove the background of any video - 100% automatically, online & free! Goodbye Greenscreen. Hello Unscreen.",
-        link: "https://www.unscreen.com/",
-        new: true
+        link: "https://www.unscreen.com/"
       },
       zeplin: {
         title: "Zeplin",
@@ -460,14 +466,6 @@ const resources = {
         desc:
           "A community-driven effort to make web accessibility easier with a checklist for your site.",
         link: "https://a11yproject.com/checklist/"
-      },
-      accessibilityBasics: {
-        title: "The Web Accessibility Basics",
-        image: "accessibility-basics.png",
-        desc:
-          "A list of absolute web accessibility basics every web designer should know.",
-        link:
-          "https://marcozehe.wordpress.com/2015/12/14/the-web-accessibility-basics/"
       }
     }
   },
@@ -589,25 +587,12 @@ const resources = {
     title: "Shopify",
     desc: "Shopify themes, apps, courses, and more.",
     resourcesList: {
-      eCommTalk: {
-        title: "eCommTalk",
-        image: "ecommtalk.png",
-        desc: "A Slack community created to bring Shopify lovers together.",
-        link: "https://ecommtalk.com/shopify/"
-      },
       pixelUnion: {
         title: "Pixel Union",
         image: "pixel-union.png",
         desc:
           "Shopify themes, apps, and custom ecommerce solutions to help business sell more.",
         link: "https://www.pixelunion.net/"
-      },
-      shopifyFD: {
-        title: "ShopifyFD",
-        image: "shopifyFD.png",
-        desc:
-          "An awesome and free Chrome extension to make the Shopify dashboard better.",
-        link: "http://shopifyfd.com/"
       },
       storeTasker: {
         title: "Storetasker",
